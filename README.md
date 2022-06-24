@@ -36,15 +36,15 @@ To further explain the code, StandardScaler has been adapted to scale different 
 
 Specifically, linear regression model is finding the least Sum of Squared Errors(SSE). Additional predictor variables to the model may decrease the error, but there is possibility of the overfit which reduces the generalization performance for the test data. Ridge and Lasso is introduced to find the balance between the model’s performance and the numbers of predictor variables. First equation below is the Ridge’s cost function where sum of the squared coefficients were added to the cost function of SSE. 
 
-![Ridge](./asset/Screen Shot 2022-04-26 at 3.52.43 PM.png)
+![Ridge](./asset/Ridge.png)
 
 On the other hand, the second equation below is the Lasso’s cost function where absolute value of coefficients were added instead. This enables predictor variables to disappear with zero coefficient which leads to selecting more important independent variable.
 
-![Lasso](./asset/Screen Shot 2022-04-26 at 3.52.48 PM.png)
+![Lasso](./asset/Lasso.png)
 
 ElasticNet’s cost function written below is the weighted mean of Lasso and Ridge’s regularization to the Sum of Squared Errors. Thus the model can be summarized as finding fit for the linear regression model with squared(L2) and absolute value(L1) penalization term. 
 
-![Screen Shot 2022-04-26 at 3.52.55 PM](../assets/images/README/Screen Shot 2022-04-26 at 3.52.55 PM-6060458.png)
+![Screen Shot 2022-04-26 at 3.52.55 PM](./asset/ElasticNet.png)
 
 
 
